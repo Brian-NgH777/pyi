@@ -1,0 +1,3 @@
+([('pk-mac',
+   '/Users/brian/Desktop/project/viact-ai/pyi/dist/pk-mac',
+   'EXECUTABLE')],)

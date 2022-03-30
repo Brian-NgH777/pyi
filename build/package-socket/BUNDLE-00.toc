@@ -1,3 +1,0 @@
-([('package-socket',
-   '/Users/brian/Desktop/project/viact-ai/pyi/dist/package-socket',
-   'EXECUTABLE')],)
