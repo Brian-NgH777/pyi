@@ -9,10 +9,11 @@ import requests
 from datetime import datetime
 
 oper = platform.system()
+apiKey= "01fzm8bzzjpghaezax4df49yxy01fzm8cc0nqy899hpqrn38z6vdrosbtg7px9ty"
 
 def getVendor(mac):
     vendor = {}
-    url = "https://api.maclookup.app/v2/macs/%s"%(mac)
+    url = "https://api.maclookup.app/v2/macs/%s?apiKey=%s"%(mac,apiKey)
     r = requests.get(url)
     if r.status_code == 200:
         vendor = r.json()
