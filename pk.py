@@ -12,11 +12,13 @@ oper = platform.system()
 apiKey= "01fzm8bzzjpghaezax4df49yxy01fzm8cc0nqy899hpqrn38z6vdrosbtg7px9ty"
 
 def getVendor(mac):
-    vendor = {}
+    vendor = "{}"
     url = "https://api.maclookup.app/v2/macs/%s?apiKey=%s"%(mac,apiKey)
     r = requests.get(url)
     if r.status_code == 200:
-        vendor = r.json()
+        data = r.json()
+        if data.get("found") == True:
+            vendor = "{'macPrefix':'%s', 'company':'%s', 'address':'%s' , 'country':'%s'}" %(data.get("macPrefix"), data.get("company"), data.get("address"),  data.get("country"))
     return vendor
 
 

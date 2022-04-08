@@ -1,3 +1,0 @@
-([('pk-new',
-   '/Users/brian/Desktop/project/viact-ai/pyi/dist/pk-new',
-   'EXECUTABLE')],)
